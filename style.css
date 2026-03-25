@@ -1,0 +1,46 @@
+/* General page styles */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f0f2f5;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Heading */
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Container to position canvas over video */
+.video-container {
+  position: relative;
+  display: inline-block;
+}
+
+/* Video feed from webcam */
+video {
+  border: 3px solid #333;
+  border-radius: 12px;
+  max-width: 90%;
+  height: auto;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  display: block;
+}
+
+/* Overlay canvas for face boxes */
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 12px;
+  pointer-events: none; /* Canvas won’t block video interaction */
+}
+
+/* Footer or additional text */
+footer {
+  margin-top: 30px;
+  font-size: 14px;
+  color: #666;
+}
